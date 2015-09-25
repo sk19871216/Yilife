@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include android:id="@+id/my_awesome_toolbar" layout="@layout/title_text"></include>
+    <com.jiuan.android.app.yilife.config.EditTextWithDel
+        android:paddingRight="10dp"
+        android:textSize="17sp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:id="@+id/edittext_changes_name"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.jiuan.android.app.yilife.config.EditTextWithDel
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:paddingRight="10dp"
+        android:textSize="17sp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:id="@+id/edittext_changes_phone"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--<RadioGroup-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#fff"-->
+        <!--android:layout_below="@+id/my_awesome_toolbar"-->
+        <!--android:id="@+id/radio_changes_sex"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_man"-->
+            <!--android:text="男"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_woman"-->
+            <!--android:text="女"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_other"-->
+            <!--android:text="保密"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--</RadioGroup>-->
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:id="@+id/lv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        </ListView>
+    <TextView
+
+        android:paddingLeft="20dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:hint="请选择日期"
+        android:textColor="#000"
+        android:id="@+id/textview_changes_bir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:id="@+id/linearlayout_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:background="#dadada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:background="#fff"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:paddingLeft="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="旧\u2000密\u2000码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.jiuan.android.app.yilife.config.EditTextWithDel
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:id="@+id/changes_edittext_oldpassword"
+                android:hint="请输入当前密码"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:background="#dadada"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:background="#dadada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:paddingBottom="13dp"
+            android:background="#fff"
+            android:paddingTop="13dp"
+            android:paddingLeft="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="新\u2000密\u2000码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.jiuan.android.app.yilife.config.EditTextWithDel
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:id="@+id/changes_edittext_firstpassword"
+                android:hint="密码6-16个字符，不能包含空格"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:background="#dadada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:paddingBottom="13dp"
+            android:background="#fff"
+            android:paddingTop="13dp"
+            android:paddingLeft="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="再次确认"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.jiuan.android.app.yilife.config.EditTextWithDel
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:id="@+id/changes_edittext_secondpassword"
+                android:hint="再次输入密码"
+                android:layout_width="wrap_content"
+                android:layout_weight="4"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:background="#dadada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+</RelativeLayout>

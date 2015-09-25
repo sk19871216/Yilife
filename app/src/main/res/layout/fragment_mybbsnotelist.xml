@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/notelist_background1"
+    android:background="#f1f1f1"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_mybbsnotelist"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_totop_mybbs"
+        android:background="@drawable/icon_totop"
+        android:layout_width="44dp"
+        android:layout_height="44dp" />
+</RelativeLayout>

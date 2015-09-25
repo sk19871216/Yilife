@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_awesome_toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#209df3"-->
+        <!--android:minHeight="?attr/actionBarSize">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:background="@drawable/icon_back" />-->
+
+            <!--<TextView-->
+                <!--android:textSize="17sp"-->
+                <!--android:id="@+id/actionbar_title"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="评论" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:src="@drawable/icon_edit"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/action_bar_setting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"/>-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <include android:id="@+id/my_awesome_toolbar" layout="@layout/title_icon"></include>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_pinlgun_list"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_totop_pinglunlist"
+        android:background="@drawable/icon_totop"
+        android:layout_width="44dp"
+        android:layout_height="44dp" />
+</RelativeLayout>

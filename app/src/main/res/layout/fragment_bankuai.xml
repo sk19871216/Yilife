@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gridlayout_bankuai"
+
+>
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<GridLayout-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView -->
+                <!--android:src="@drawable/icon_iemylife3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--<ImageView-->
+                <!--android:src="@drawable/icon_iemylife3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--</GridLayout>-->
+        <!--</ScrollView>-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/layout_bankuai_yilife"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/iv_1"
+                    android:layout_gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"></FrameLayout>
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="宜生活"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            <FrameLayout
+
+                android:background="#e3e8eb"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></FrameLayout>
+            <LinearLayout
+                android:id="@+id/layout_bankuai_aijiaren"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/iv_2"
+                    android:layout_gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"></FrameLayout>
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="爱家人"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#e3e8eb"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></FrameLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_bankuai_banzhuhuiyishi"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_3"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></FrameLayout>
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="版主会议室"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+
+            android:background="#e3e8eb"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></FrameLayout>
+        <LinearLayout
+            android:id="@+id/layout_bankuai_luntanshiwu"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_4"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></FrameLayout>
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="论坛事务"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#e3e8eb"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></FrameLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_bankuai_chanpingfankui"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_5"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></FrameLayout>
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="产品反馈"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:background="#e3e8eb"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></FrameLayout>
+        <LinearLayout
+            android:id="@+id/layout_bankuai_shouhoufuwu"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_6"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></FrameLayout>
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="售后服务"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#e3e8eb"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></FrameLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_bankuai_wenda"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_7"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></FrameLayout>
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="生活问答"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:background="#e3e8eb"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></FrameLayout>
+        <LinearLayout
+            android:id="@+id/layout_bankuai_other"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_8"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" ></com.android.volley.toolbox.NetworkImageView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></FrameLayout>
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="期待..."
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+            <FrameLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#e3e8eb"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></FrameLayout>
+
+</LinearLayout>

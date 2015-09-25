@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/invitation_text1"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="邀请码"
+        android:textColor="#Fff"
+        android:background="@drawable/invitationcode"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/invitation_relativelayout"
+        android:layout_below="@+id/invitation_text1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+        <TextView
+            android:id="@+id/invitation_text2"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp" />
+
+        <TextView
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="（长按复制）"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@+id/invitation_relativelayout"
+        android:id="@+id/invitation_text3"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="向好友发送邀请码，好友输入此邀请码成功注册宜生活平台并消费商品后，您将获得重金返利哦！~"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#dcdce0"
+                android:layout_width="0dp"
+                android:layout_height="2dp"></FrameLayout>
+            <TextView
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="邀请好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#dcdce0"
+                android:layout_width="0dp"
+                android:layout_height="2dp"></FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/innivationfriend_erweima_session"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_session_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="微信朋友"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/innivationfriend_timeline"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_timeline_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="微信朋友圈"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/innivationfriend_qq"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_qq_friend_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="QQ"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/innivationfriend_sina"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_sina_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="新浪微博"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/innivationfriend_erweima"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/erweima_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="扫码邀请"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

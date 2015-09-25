@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:id="@+id/linearlayout_background"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/title_text"></include>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_mydianpinglist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

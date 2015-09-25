@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+    <include layout="@layout/title_text"></include>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.jiuan.android.app.yilife.config.RoundImageView
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:id="@+id/firstrecommend_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:id="@+id/firstrecommend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:id="@+id/firstrecommend_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:id="@+id/firstrecommend_resgtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textColor="#000"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:text="通过他/她获得的收益"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="0dp"
+        android:background="@drawable/fangkuang"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:text="\u2000\u2000直接收益\u2000\u2000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/straight_money"
+                android:textColor="#fd5f16"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="16dp"
+            android:background="#e6e6e6"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></FrameLayout>
+        <LinearLayout
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:text="一级获得收益"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/get_from_step1_money"
+                android:textColor="#fd5f16"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="16dp"
+            android:background="#e6e6e6"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></FrameLayout>
+        <LinearLayout
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:text="二级获得收益"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/get_from_step2_money"
+                android:textColor="#fd5f16"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textColor="#000"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:text="我的二级被推荐信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="0dp"
+        android:background="@drawable/fangkuang"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="85dp">
+        <LinearLayout
+            android:layout_marginTop="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textSize="15sp"
+                android:text="我的二级推荐用户："
+                android:paddingLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/firstcommend_detail_setp2_count"
+                android:paddingLeft="3dp"
+                android:textSize="15sp"
+                android:text="20人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:text="我的二级用户收益："
+                android:paddingLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/firstcommend_detail_setp2_money"
+                android:textSize="20sp"
+                android:paddingLeft="3dp"
+                android:textColor="#fd5f16"
+                android:text="30.00元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textColor="#000"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:text="我的三级被推荐信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="0dp"
+        android:background="@drawable/fangkuang"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="85dp">
+        <LinearLayout
+            android:layout_marginTop="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textSize="15sp"
+                android:text="我的三级推荐用户："
+                android:paddingLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/firstcommend_detail_setp3_count"
+                android:paddingLeft="3dp"
+                android:textSize="15sp"
+                android:text="20人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:text="我的三级用户收益："
+                android:paddingLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/firstcommend_detail_setp3_money"
+                android:textSize="20sp"
+                android:paddingLeft="3dp"
+                android:textColor="#fd5f16"
+                android:text="30.00元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

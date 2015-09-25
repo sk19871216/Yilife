@@ -1,0 +1,405 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_awesome_toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#209df3"-->
+        <!--android:minHeight="?attr/actionBarSize">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:background="@drawable/icon_back" />-->
+
+            <!--<TextView-->
+                <!--android:textSize="17sp"-->
+                <!--android:id="@+id/actionbar_title"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="详情" />-->
+
+            <!--<TextView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/action_bar_setting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"/>-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <include layout="@layout/title_text"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="#fff"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/item_apps_icon"
+                            android:layout_width="67dp"
+                            android:layout_height="67dp"
+                            />
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/text_apps_title"
+                                android:layout_marginBottom="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RatingBar
+                                android:layout_marginBottom="5dp"
+                                android:id="@+id/room_ratingbar_detail"
+                                style="@style/SmallRatingBar"
+                                android:numStars="5"
+                                android:rating="5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="true"/>
+                            <TextView
+                                android:id="@+id/tv_apps_detail_downloadcount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textview_donwload_detail"
+                        android:gravity="center"
+                        android:background="@drawable/textview_outline"
+                        android:textColor="#209df3"
+                        android:layout_centerVertical="true"
+                        android:text="下载"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="67dp"
+                        android:layout_height="30dp" />
+
+                </RelativeLayout>
+            <TextView
+                android:background="#dadada"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:background="#dadada"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+                <android.support.v4.view.ViewPager
+                    android:paddingTop="12dp"
+                    android:background="#fff"
+                    android:id="@+id/vp_apps_main_vp"
+                    android:layout_above="@+id/advertisement"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+
+                    >
+
+                </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:id="@+id/linearlayout_undervp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+            <TextView
+                android:background="#dadada"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:background="#dadada"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:paddingTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#209df3"
+                        android:text="描述"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_apps_detail_msg"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_apps_detail_ver1"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#209df3"
+                        android:text=""
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_apps_detail_ver_detail"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:background="#dadada"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                    </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_gotopinglun"
+                    android:layout_marginTop="7dp"
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:background="#dadada"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="15dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="#209df3"
+                            android:text="评论"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RatingBar
+                                android:layout_marginLeft="15dp"
+                                android:id="@+id/room_ratingbar_detail_goto"
+                                style="@style/roomRatingBar"
+                                android:numStars="5"
+                                android:rating="4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="true"/>
+                            <TextView
+                                android:id="@+id/tv_apps_detail_pingluncount"
+                                android:layout_marginLeft="22dp"
+                                android:text=""
+                                android:textSize="15sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView
+                        android:src="@drawable/icon_righttodetail"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            <TextView
+                android:background="#dadada"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:background="#dadada"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:layout_marginLeft="7sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#209df3"
+                        android:text="详细信息"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="·版本:"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="15sp"
+                            android:id="@+id/tv_apps_detail_ver"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="15sp"
+                            android:text="·大小:"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="15sp"
+                            android:id="@+id/tv_apps_detail_size"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="15sp"
+                            android:text="·时间:"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="15sp"
+                            android:id="@+id/tv_apps_detail_time"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="15sp"
+                            android:text="·语言:"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="15sp"
+                            android:id="@+id/tv_apps_detail_lag"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="15sp"
+                            android:text="·系统要求:"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="15sp"
+                            android:id="@+id/tv_apps_detail_xitong"
+                            android:text="\u2000\u2000\u2000\u2000\u2000\u2000\u2000\u2000\u2000\u2000\u2000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_marginTop="40dp"
+                        android:background="#dadada"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

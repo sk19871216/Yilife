@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('weibosdkcore_v3.0.1.jar'))

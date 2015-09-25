@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/title_icon"></include>
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="17dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/star_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:text="标题"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="13dp"
+                android:singleLine="true"
+                android:id="@+id/edittext_pinglun_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="不超过20个字"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada"></FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/star_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="总体评价"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="17dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RatingBar
+
+                    android:layout_gravity="center"
+                    android:id="@+id/room_ratingbar_detail"
+                    style="@style/RatingBar"
+                    android:numStars="5"
+                    android:rating="5"
+
+                    android:stepSize="1.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/level"
+                    android:text="超赞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada"></FrameLayout>
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/star_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="评价内容"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:paddingBottom="3dp"
+                android:text="10~200个字"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/edittext_pinglun_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="说说您的体验感受吧"
+            android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

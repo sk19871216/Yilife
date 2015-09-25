@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiuan.android.app.yilife" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.install_packages" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name=".config.MyBroad" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="${UMENG_CHANNEL_VALUE}" /> -->
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.BBSMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".imageloader.SelectImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".imageloader.SelectImageBBSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".imageloader.SelectImageTouxiangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Splash"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Forum"
+            android:label="@string/title_activity_forum"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Store"
+            android:label="@string/title_activity_store"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Apps"
+            android:label="@string/title_activity_apps"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.LoginNormal"
+            android:label="@string/title_activity_login__normal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Registration"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyDetail"
+            android:label="@string/title_activity_my_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.LoginGetchecknumber"
+            android:label="@string/title_activity_login_getchecknumber"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Fankui"
+            android:label="@string/title_activity_fankui"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Changes"
+            android:label="@string/title_activity_changes"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="85480bfc3a006c927758a0ab4ea6fbaca5e760a2" />
+
+        <activity
+            android:name=".activity.AppsDetail"
+            android:label="@string/title_activity_apps_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.NoteList"
+            android:label="@string/title_activity_note_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.SendNote"
+            android:configChanges="navigation|keyboardHidden"
+            android:label="@string/title_activity_send_note"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.MyBBsNote"
+            android:label="@string/title_activity_my_bbs_note"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ShowNote"
+            android:label="@string/title_activity_show_note"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.BigPic"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.BigPic2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.PingLun"
+            android:label="@string/title_activity_ping_lun"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.PingLunList"
+            android:label="@string/title_activity_ping_lun_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyRedbag"
+            android:label="@string/title_activity_my_redbag"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Duihuan"
+            android:label="@string/title_activity_duihuan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.DuihuanDone"
+            android:label="@string/title_activity_duihuan_done"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="WXEntryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.HTML5Activity"
+            android:label="HTML5Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- android:process=":process.new" -->
+        <activity
+            android:name=".activity.www1"
+            android:label="@string/title_activity_www1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+        <!-- <receiver android:name=".activity.Apps$Broadcast"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.DOWNLOAD_COMPLETE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity
+            android:name=".activity.BBSinfoActivity"
+            android:label="@string/title_activity_bbsinfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ForumInfoChange"
+            android:label="@string/title_activity_forum_info_change"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.QQActivity"
+            android:label="@string/title_activity_qq" >
+        </activity>
+        <activity
+            android:name="com.tencent.open.yyb.AppbarActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.tencent.connect.avatar.ImageActivity" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104215150" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WeiXinLoginActivity"
+            android:label="@string/title_activity_wei_xin_login" >
+        </activity>
+        <activity
+            android:name=".activity.MyErweima"
+            android:label="@string/title_activity_my_erweima"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Bangding"
+            android:label="@string/title_activity_bangding"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.BangDingOrNot"
+            android:label="@string/title_activity_bang_ding_or_not"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.QuickLoginActivity"
+            android:label="@string/title_activity_quick_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ResgActivity"
+            android:label="@string/title_activity_resg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ForgetpasswordActivity"
+            android:label="@string/title_activity_forgetpassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Forgetpassword2Activity"
+            android:label="@string/title_activity_forgetpassword2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ThreadBangding"
+            android:label="@string/title_activity_thread_bangding"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.AD"
+            android:label="@string/title_activity_ad"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.CheckOldPhone"
+            android:label="@string/title_activity_check_old_phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.CheckNewPhone"
+            android:label="@string/title_activity_check_new_phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.CreatNewPassword"
+            android:label="@string/title_activity_creat_new_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Setting"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Text"
+            android:label="@string/title_activity_text"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyDianPing"
+            android:label="@string/title_activity_my_dian_ping"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ParentActivity"
+            android:label="@string/title_activity_parent" >
+        </activity>
+
+        <receiver android:name=".activity.ParentActivity$MyReceiver" >
+            <intent-filter>
+                <action android:name="2010.1" />
+                <action android:name="2010.2" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.Huodong"
+            android:label="@string/title_activity_huodong"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MyRecommend"
+            android:label="@string/title_activity_my_recommend"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.RecommendDetail"
+            android:label="@string/title_activity_recommend_detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.FirstRecommendDetail"
+            android:label="@string/title_activity_first_recommend_detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.FriendRecommend"
+            android:label="@string/title_activity_friend_recommend"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

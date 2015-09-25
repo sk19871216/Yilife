@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_awesome_toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#209df3"-->
+        <!--android:minHeight="?attr/actionBarSize">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:background="@drawable/icon_back" />-->
+
+            <!--<TextView-->
+                <!--android:textSize="17sp"-->
+                <!--android:id="@+id/actionbar_title"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="应用" />-->
+
+            <!--<TextView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/action_bar_setting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"/>-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <include layout="@layout/title_text"></include>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_apps_main_vp"
+        android:layout_above="@+id/advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+
+        >
+    </android.support.v4.view.ViewPager>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <ListView
+                android:id="@+id/apps_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </LinearLayout>
+
+
+</LinearLayout>

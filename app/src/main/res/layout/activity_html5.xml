@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearlayout_H5"
+    android:orientation="vertical">
+
+    <!--<include-->
+        <!--android:id="@+id/back_toolbar"-->
+        <!--layout="@layout/layout_backtoolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_awesome_toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#209df3"-->
+        <!--android:minHeight="?attr/actionBarSize">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:src="@drawable/icon_back" />-->
+
+            <!--<TextView-->
+                <!--android:textSize="17sp"-->
+                <!--android:id="@+id/actionbar_title"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="活动" />-->
+
+            <!--<ImageView-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:src="@drawable/icon_share"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/action_bar_setting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"/>-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <FrameLayout
+        android:background="#d0000000"
+        android:id="@+id/H5_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+     <include android:id="@+id/H5_toolbar" layout="@layout/title_icon"></include>
+    <FrameLayout
+        android:layout_below="@+id/H5_toolbar"
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+</RelativeLayout>

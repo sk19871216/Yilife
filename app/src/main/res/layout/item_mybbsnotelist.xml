@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:paddingLeft="9dp"
+        android:paddingTop="8dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_mybbsnotelist_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_item_mybbsnotelist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="111"
+            android:textColor="#000"
+            android:textSize="17sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/linearlayout_mybbsnotelist_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:id="@+id/mynote_linear_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_height="13dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:src="@drawable/icon_count" />-->
+
+                    <TextView
+                        android:drawableLeft="@drawable/icon_count"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tv_mybbsnotelist_count"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:singleLine="true"
+                        android:text="2"
+                        android:gravity="left"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:drawableLeft="@drawable/icon_calendar"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tv_mybbsnotelist_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#8c8c8c"
+                        android:text="2011-11-11"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:drawableLeft="@drawable/icon_time"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tv_mybbsnotelist_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:text="3:33"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_height="13dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:src="@drawable/icon_calendar" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_mybbsnotelist_day"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="2dp"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="#8c8c8c"-->
+                        <!--android:text="2011-11-11"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_height="13dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:src="@drawable/icon_time" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_mybbsnotelist_time"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="2dp"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:text="3:33"-->
+                        <!--android:textColor="#8c8c8c"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/mynote_linear_right"
+                android:id="@+id/tv_mybbsnotelist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:text="234"
+                android:singleLine="true"
+                android:textColor="#209df3"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

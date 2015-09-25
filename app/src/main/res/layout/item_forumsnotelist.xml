@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="9dp"
+        android:paddingLeft="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="46dp"
+            android:id="@+id/tv_item_forumsnote_title"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="111111111111111111111111111111111"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:id="@+id/iv_forumsnote_icon"
+            android:layout_width="22dp"
+            android:layout_height="19dp"
+            />
+    </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/linearlayout_forumsnote_count"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout_right"
+            android:layout_alignParentRight="true"
+            android:paddingRight="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--<ImageView-->
+                    <!--android:src="@drawable/icon_count"-->
+                    <!--android:layout_width="13dp"-->
+                    <!--android:layout_height="13dp" />-->
+                <TextView
+                    android:drawableLeft="@drawable/icon_count"
+                    android:drawablePadding="2dp"
+                    android:textColor="#8c8c8c"
+                    android:singleLine="true"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="12sp"
+                    android:text="2"
+                    android:gravity="left"
+                    android:id="@+id/tv_forumsnote_count"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:drawableLeft="@drawable/icon_calendar"
+                    android:drawablePadding="2dp"
+                    android:textColor="#8c8c8c"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:text="2011-11-11"
+                    android:id="@+id/tv_forumsnote_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:drawableLeft="@drawable/icon_time"
+                    android:drawablePadding="2dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:textColor="#8c8c8c"
+                    android:text="3:33"
+                    android:id="@+id/tv_forumsnote_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:src="@drawable/icon_calendar"-->
+                    <!--android:layout_width="13dp"-->
+                    <!--android:layout_height="13dp" />-->
+                <!--<TextView-->
+                    <!--android:textColor="#8c8c8c"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:text="2011-11-11"-->
+                    <!--android:id="@+id/tv_forumsnote_day"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:src="@drawable/icon_time"-->
+                    <!--android:layout_width="13dp"-->
+                    <!--android:layout_height="13dp" />-->
+                <!--<TextView-->
+                    <!--android:singleLine="true"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textColor="#8c8c8c"-->
+                    <!--android:text="3:33"-->
+                    <!--android:id="@+id/tv_forumsnote_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--</LinearLayout>-->
+        </LinearLayout>
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/linearlayout_right"
+                    android:textColor="#209df3"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="12sp"
+                    android:text="234"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_forumsnote_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+</LinearLayout>

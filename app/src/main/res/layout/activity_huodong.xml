@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/hd_linearlayout"
+    android:layout_height="match_parent" >
+    <include layout="@layout/title_text"></include>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/hd_lv"
+        android:dividerHeight="0dp"
+        android:divider="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

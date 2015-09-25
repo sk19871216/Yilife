@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/resg_back"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/icon_back_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="17sp"
+            android:text="新用户"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:background="#909090"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/button_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/touxiang_new"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:id="@+id/resg_user"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:hint="11位手机号"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/resg_getchecknumber"
+            android:layout_marginRight="3dp"
+            android:textSize="13sp"
+            android:background="@drawable/button_blue_durk"
+            android:textColor="#fff"
+            android:text="获取验证码"
+            android:gravity="center"
+            android:layout_width="75dp"
+            android:layout_height="32dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/button_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/icon_msg_new"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:id="@+id/resg_msg"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="短信验证码"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/button_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/icon_code_new"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:id="@+id/resg_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:hint="密码6~16个字符，不能包含空格"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp"
+            android:background="@drawable/button_white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/icon_new_invitationcode"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:id="@+id/resg_invitationcode"
+                android:singleLine="true"
+                android:hint="邀请码（可选填）"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:textSize="13sp"
+            android:id="@+id/resg_checkbox"
+            android:checked="true"
+            android:text="已阅读并同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/resg_xieyi"
+            android:textColor="#209fd3"
+            android:text="《宜生活用户使用协议》"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/resg_done"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_blueframe"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/all_resg"/>
+</RelativeLayout>

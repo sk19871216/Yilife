@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_awesome_toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#209df3"-->
+        <!--android:minHeight="?attr/actionBarSize">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:background="@drawable/icon_backbig" />-->
+
+            <!--<TextView-->
+                <!--android:textSize="17sp"-->
+                <!--android:id="@+id/actionbar_title"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="feedback" />-->
+
+            <!--<ImageView-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:src="@drawable/icon_commit"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/action_bar_setting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"/>-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <include layout="@layout/title_icon"></include>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        android:text="我们懂的聆听，希望做的更好！留下您的宝贵意见吧~~"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/edittext_fankui"
+        android:background="#ffffff"
+        android:paddingLeft="15dp"
+        android:hint="反馈内容"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="215dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="添加图片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="已选择0/5 张"
+            android:id="@+id/textview_fankui_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+  
+    <RelativeLayout
+        android:id="@+id/layout_addimageview"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_photo"
+            android:id="@+id/imageview_fankui_add1"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_photo"
+            android:id="@+id/imageview_fankui_add2"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_photo"
+            android:id="@+id/imageview_fankui_add3"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_addimageview2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="invisible"
+            android:src="@drawable/icon_photo"
+            android:id="@+id/imageview_fankui_add4"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_photo"
+            android:id="@+id/imageview_fankui_add5"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_shownote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12.5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginRight="18dp"
+                android:id="@+id/tv_shownote_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2.5dp"
+                android:text="高大上"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:text="1#"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginBottom="7.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_iscontainsfujian"
+                android:layout_centerVertical="true"
+                android:hint="此帖有附件请到web端下载"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_reply1f"
+                android:src="@drawable/icon_bigmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_rightside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_jinghua_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_height="13dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:src="@drawable/icon_count" />-->
+
+                    <TextView
+                        android:drawableLeft="@drawable/icon_count"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tv_shownote_title_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:text="234"
+                        android:textColor="#209df3"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:drawableLeft="@drawable/icon_calendar"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tv_shownote_title_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="2011-11-11"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:drawableLeft="@drawable/icon_time"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tv_shownote_title_time"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="3:33"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearlayout_jinghua_day"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_toRightOf="@+id/linearlayout_jinghua_count"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_height="13dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:src="@drawable/icon_calendar" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shownote_title_day"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="2dp"-->
+                        <!--android:text="2011-11-11"-->
+                        <!--android:textColor="#8c8c8c"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_toRightOf="@+id/linearlayout_jinghua_day"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_height="13dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:src="@drawable/icon_time" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shownote_title_time"-->
+
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="2dp"-->
+                        <!--android:text="3:33"-->
+                        <!--android:textColor="#8c8c8c"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+            <TextView
+                android:text="123"
+                android:id="@+id/tv_shownote_firname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/linearlayout_rightside"
+                android:ellipsize="end"
+                android:textColor="#858585"
+                android:singleLine="true"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="9dp"
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <WebView
+        android:id="@+id/webview_showall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="22dp"
+        android:background="#fff"></WebView>
+    <TextView
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:layout_width="13dp"
+
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_count" />
+
+        <TextView
+            android:id="@+id/tv_shownote_replycount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:text="3"
+            android:textSize="15sp"
+            android:textColor="#209df3" />
+
+        <TextView
+            android:id="@+id/tv_showall_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条回复"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <TextView
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

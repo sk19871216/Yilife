@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_awesome_toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#209df3"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!-->-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:background="@drawable/icon_back" />-->
+
+            <!--<TextView-->
+                <!--android:textSize="17sp"-->
+                <!--android:id="@+id/actionbar_title"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="我的发帖" />-->
+
+            <!--<TextView-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/action_bar_setting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"/>-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <include layout="@layout/title_text"></include>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="14dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+
+            android:text="我的主题"
+            android:textColor="#209df3"
+            android:textSize="18sp"
+            android:id="@+id/tv_mybbsnotelist1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_mybbsnotelist1"
+                android:layout_marginTop="7dp"
+                android:background="#209df3"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="14dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000"
+                android:text="我的回复"
+                android:textSize="18sp"
+                android:id="@+id/tv_mybbsnotelist2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_mybbsnotelist2"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="14dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000"
+                android:text="我的精华"
+                android:textSize="18sp"
+                android:id="@+id/tv_mybbsnotelist3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_mybbsnotelist3"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+        </LinearLayout>
+
+        </LinearLayout>
+    <TextView
+        android:background="#d7d7d7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:id="@+id/mybbsnotelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

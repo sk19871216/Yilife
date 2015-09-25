@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/point"
+        android:layout_centerInParent="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <ImageView
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/point"
+        android:layout_toLeftOf="@+id/point"
+        android:id="@+id/icon_app"
+        android:src="@drawable/icon_aapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_above="@+id/point"
+        android:layout_toRightOf="@+id/point"
+        android:id="@+id/icon_bbs"
+        android:src="@drawable/icon_bbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@+id/point"
+        android:layout_toLeftOf="@+id/point"
+        android:id="@+id/icon_store"
+        android:src="@drawable/icon_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/point"
+        android:layout_toRightOf="@+id/point"
+        android:id="@+id/icon_other"
+        android:src="@drawable/icon_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

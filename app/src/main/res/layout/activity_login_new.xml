@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#209df3">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include  layout="@layout/title_text"></include>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="35dp"
+        android:textSize="33sp"
+        android:textColor="#fff"
+        android:text="Welcome to 宜生活"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/button_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/touxiang_new"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:id="@+id/login_edittext_phone"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:hint="注册手机号"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/icon_code_new"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:id="@+id/login_edittext_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:hint="请输入密码"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginLeft="29dp"
+        android:id="@+id/login_button_noamal"
+        android:textColor="#ffffff"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:background="@drawable/icon_blueframe_druk"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/login_textview_forgetpassword"
+            android:textColor="#094d9e"
+            android:text="忘记密码"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/login_button_getchecknumber"
+            android:textColor="#094d9e"
+            android:text="快速登录"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginRight="29dp"
+        android:layout_marginLeft="29dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/weixin"
+            android:id="@+id/weixinloginbutton"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/qq"
+            android:id="@+id/qqbutton"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/sina"
+            android:id="@+id/sinabutton"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/zhi"
+            android:id="@+id/epainbutton"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        </LinearLayout>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/login_new_resg"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:background="@drawable/newuserresg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/login_new_resg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/all_login"/>
+    </RelativeLayout>

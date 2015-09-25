@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="23dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:background="#dadada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:src="@drawable/icon_password"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.jiuan.android.app.yilife.config.EditTextWithDel
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:id="@+id/registration3_edittext_firstpassword"
+                android:hint="密码6~16个字符，不能包含空格"
+                android:singleLine="true"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:background="#dadada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingRight="11dp"
+                android:paddingLeft="13dp"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/icon_secpassword"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.jiuan.android.app.yilife.config.EditTextWithDel
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:id="@+id/registration3_edittext_secondpassword"
+                android:hint="再次输入密码"
+                android:singleLine="true"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:background="#dadada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+
+    </LinearLayout>
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/registration3_button_checkphone"
+        android:background="@drawable/button_blue"
+        android:text="完成"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

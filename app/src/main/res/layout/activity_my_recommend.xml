@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_text"></include>
+    <LinearLayout
+        android:id="@+id/recommend_redback"
+        android:background="#fe5113"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/total_recomment"
+                android:textColor="#fff"
+                android:text="总收益（元）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/total_recomment"
+                android:id="@+id/recommend"
+                android:textColor="#fff"
+                android:textSize="47sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:text="一级收益"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recommend_setp1"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#fff"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></FrameLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:text="二级收益"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recommend_setp2"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#fff"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></FrameLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:text="三级收益"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recommend_setp3"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="#e6e6e6"
+            android:id="@+id/first_recommender_list"
+            android:paddingTop="12dp"
+            android:gravity="center_horizontal"
+            android:drawablePadding="3dp"
+            android:drawableBottom="@drawable/small_sanjiao"
+            android:text="一级被推荐人列表"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:background="#fff"
+            android:id="@+id/recommend_pulltorefreshlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/MyrecommendTotop"
+            android:src="@drawable/recommendbacktop"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+    </RelativeLayout>
+
+</LinearLayout>

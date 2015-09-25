@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingBottom="2dp"
+        android:background="#e4f4ff"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_pinglun_index"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:text="1"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_pinglun_title"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:text="1121"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <ImageView
+        android:background="@drawable/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RatingBar
+                android:layout_marginLeft="23dp"
+                android:id="@+id/room_ratingbar_detail"
+                style="@style/SmallRatingBar"
+                android:numStars="5"
+                android:rating="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"/>
+            <LinearLayout
+                android:layout_toLeftOf="@+id/layout_date"
+
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+                    android:text="23211111111"
+                    android:id="@+id/tv_pinglun_user"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_date"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <!--<ImageView-->
+                        <!--android:src="@drawable/icon_calendar"-->
+                        <!--android:layout_width="15dp"-->
+                        <!--android:layout_height="15dp" />-->
+                    <TextView
+                        android:drawableLeft="@drawable/icon_calendar"
+                        android:drawablePadding="2dp"
+                        android:singleLine="true"
+                        android:textSize="12sp"
+                        android:text="2011-11-11"
+                        android:id="@+id/tv_pinglun_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <!--<ImageView-->
+                        <!--android:src="@drawable/icon_time"-->
+                        <!--android:layout_width="15dp"-->
+                        <!--android:layout_height="15dp" />-->
+                    <TextView
+                        android:drawableLeft="@drawable/icon_time"
+                        android:drawablePadding="2dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:text="3:33"
+                        android:id="@+id/tv_pinglun_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:background="#fff"
+        android:paddingLeft="23dp"
+        android:paddingBottom="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_pinglun_neirong"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"
+            android:textSize="17sp"
+            android:text="一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_pinglun_showall"
+            android:paddingTop="15dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_showall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_pinglun_up"
+            android:visibility="gone"
+            android:paddingTop="15dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_show2lines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+</LinearLayout>

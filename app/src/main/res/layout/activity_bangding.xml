@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_text"></include>
+    <TextView
+        android:layout_marginTop="35dp"
+        android:background="#c8c7cc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/touxiang_new"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:id="@+id/bangding_user"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:hint="请输入账号"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/icon_code_new"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.jiuan.android.app.yilife.config.EditTextWithDel
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:id="@+id/bangding_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:hint="请输入密码"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:background="#c8c7cc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/bangding_bangding"
+        android:text="马上绑定"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:background="@drawable/button_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

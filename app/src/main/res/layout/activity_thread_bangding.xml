@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/title_text"></include>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:background="#c8c7cc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/logo_weixin"
+            android:src="@drawable/icon_weixin_bangding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo_weixin"
+            android:text="微信"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bangdingstate_weixin"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/on_off_button_weixin"
+            android:text="未绑定"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/on_off_button_weixin"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bangding_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <!--<com.jiuan.android.app.yilife.config.CheckSwitchButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        </RelativeLayout>
+
+    <TextView
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/logo_qq"
+            android:src="@drawable/icon_qq_bangding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo_qq"
+            android:text="QQ"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bangdingstate_qq"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/on_off_button_QQ"
+            android:text="未绑定"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<ToggleButton-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:id="@+id/on_off_button_QQ"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:checked="false"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:button="@drawable/togglen_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textOn=""-->
+            <!--android:textOff=""-->
+            <!--/>-->
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/on_off_button_QQ"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bangding_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/logo_sina"
+            android:src="@drawable/icon_sina_bangding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo_sina"
+            android:text="新浪"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bangdingstate_sina"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/on_off_button_sina"
+            android:text="未绑定"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<ToggleButton-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:id="@+id/on_off_button_sina"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:checked="false"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:button="@drawable/togglen_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textOn=""-->
+            <!--android:textOff=""-->
+            <!--/>-->
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/on_off_button_sina"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bangding_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/logo_alipay"
+            android:src="@drawable/icon_alipay_bangding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo_alipay"
+            android:text="支付宝"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bangdingstate_alipay"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/on_off_button_alipay"
+            android:text="未绑定"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<ToggleButton-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:id="@+id/on_off_button_alipay"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:checked="false"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:button="@drawable/togglen_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textOn=""-->
+            <!--android:textOff=""-->
+            <!--/>-->
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/on_off_button_alipay"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bangding_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:background="#c8c7cc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

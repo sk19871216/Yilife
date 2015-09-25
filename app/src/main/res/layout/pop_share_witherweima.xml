@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:id="@+id/alert_lin"
+
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="5dp"
+        android:background="#2087f3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/alert_close"
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_close"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:text=""
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/share_erweima"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="160dp" />
+    <TextView
+        android:textColor="#7d7d80"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"
+        android:text="邀请好友扫描上面的二维"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#7d7d80"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"
+        android:text="码即可完成对TA的邀请"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

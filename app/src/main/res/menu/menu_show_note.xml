@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jiuan.android.app.yilife.activity.ShowNote">
+    <item android:id="@+id/action_share"
+    android:title="分享"
+    android:icon="@drawable/icon_share"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/action_session"
+                android:title="分享到好友"
+                android:icon="@drawable/icon_session"
+                app:showAsAction="withText"
+                />
+            <item android:id="@+id/action_timeline"
+                android:title="分享到朋友圈"
+                android:icon="@drawable/icon_timeline"
+                app:showAsAction="withText"
+                />
+            </menu>
+    </item>
+
+</menu>
+    <!--android:showAsAction="never"-->

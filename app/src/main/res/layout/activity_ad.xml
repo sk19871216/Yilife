@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_linear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:textColor="#566f82"
+        android:id="@+id/ad_skip"
+        android:textSize="17sp"
+        android:text="跳过"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/linearlayout_ad"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--<ImageView-->
+            <!--android:src="@drawable/ad_blue_point"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+</RelativeLayout>
