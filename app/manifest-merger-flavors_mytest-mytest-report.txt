@@ -73,7 +73,7 @@ application
 ADDED from AndroidManifest.xml:24:5
 MERGED from com.android.support:appcompat-v7:21.0.3:16:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
-MERGED from Yilife:pullToRefreshLibrary:unspecified:11:5
+MERGED from Yilife_bak:pullToRefreshLibrary:unspecified:11:5
 MERGED from com.crashlytics.sdk.android:crashlytics:2.4.0:11:5
 MERGED from io.fabric.sdk.android:fabric:1.3.4:25:5
 MERGED from com.crashlytics.sdk.android:crashlytics-core:2.3.3:11:5
@@ -644,9 +644,9 @@ uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:21.0.3:15:5
 MERGED from com.android.support:support-v4:21.0.3:15:5
-MERGED from Yilife:innovationlibrary:unspecified:7:5
-MERGED from Yilife:utillibrary:unspecified:7:5
-MERGED from Yilife:pullToRefreshLibrary:unspecified:7:5
+MERGED from Yilife_bak:innovationlibrary:unspecified:7:5
+MERGED from Yilife_bak:utillibrary:unspecified:7:5
+MERGED from Yilife_bak:pullToRefreshLibrary:unspecified:7:5
 MERGED from com.crashlytics.sdk.android:crashlytics:2.4.0:7:5
 MERGED from io.fabric.sdk.android:fabric:1.3.4:23:5
 MERGED from com.crashlytics.sdk.android:crashlytics-core:2.3.3:7:5

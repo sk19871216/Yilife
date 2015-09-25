@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Yilife.iml" filepath="$PROJECT_DIR$/Yilife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Yilife_bak.iml" filepath="$PROJECT_DIR$/Yilife_bak.iml" />
       <module fileurl="file://$PROJECT_DIR$/alipay_demo/alipay_demo.iml" filepath="$PROJECT_DIR$/alipay_demo/alipay_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/innovationlibrary/innovationlibrary.iml" filepath="$PROJECT_DIR$/innovationlibrary/innovationlibrary.iml" />
@@ -14,4 +14,3 @@
     </modules>
   </component>
 </project>
-

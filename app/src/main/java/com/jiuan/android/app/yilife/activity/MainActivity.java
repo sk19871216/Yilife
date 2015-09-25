@@ -170,11 +170,12 @@ public class MainActivity extends ActionBarActivity implements IWeiboHandler.Res
                 super.onLoginSuccess(response);
                 downloadpath = response.getDownLoadUrl();
                 if (response.getIsCompulsoryUpgrade()==0){
-                    VolleUtils.initVolley(MainActivity.this, "http://api.fir.im/apps/latest/55ca9e56748aac5428000043?api_token=5243f0c025c29f0da82cc8a6043fd8ca", new VolleUtils.ResultCallBack() {
+                    //测试
+//                    VolleUtils.initVolley(MainActivity.this, "http://api.fir.im/apps/latest/55ca9e56748aac5428000043?api_token=5243f0c025c29f0da82cc8a6043fd8ca", new VolleUtils.ResultCallBack() {
                         //VIP
-//      VolleUtils.initVolley(this, "http://api.fir.im/apps/latest/55ca9e2e748aac51b300001b?api_token=5243f0c025c29f0da82cc8a6043fd8ca", new VolleUtils.ResultCallBack() {
+      VolleUtils.initVolley(MainActivity.this, "http://api.fir.im/apps/latest/55ca9e2e748aac51b300001b?api_token=5243f0c025c29f0da82cc8a6043fd8ca", new VolleUtils.ResultCallBack() {
                         //正式
-//        VolleUtils.initVolley(this, "http://api.fir.im/apps/latest/54bc78547d3dc3cf2c00020f?api_token=3f90c95ce9a5ca1f2d99eb49126a51ac", new VolleUtils.ResultCallBack() {
+//        VolleUtils.initVolley(MainActivity.this, "http://api.fir.im/apps/latest/54bc78547d3dc3cf2c00020f?api_token=3f90c95ce9a5ca1f2d99eb49126a51ac", new VolleUtils.ResultCallBack() {
                         @Override
                         public void result(JSONObject response) {
                             try {

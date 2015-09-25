@@ -24,7 +24,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
-        android:label="@string/app_name"
+        android:label="@string/app_name_vip"
         android:theme="@style/AppTheme" >
         <receiver android:name=".config.MyBroad" >
             <intent-filter>
@@ -37,7 +37,7 @@
 
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name"
+            android:label="@string/app_name_vip"
             android:screenOrientation="portrait" >
         </activity>
         <activity
