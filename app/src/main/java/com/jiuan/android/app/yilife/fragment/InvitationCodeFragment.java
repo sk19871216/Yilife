@@ -95,6 +95,8 @@ public class InvitationCodeFragment extends Fragment {
                             Toast.makeText(getActivity(), "网络不好，请稍后重试", Toast.LENGTH_SHORT).show();
                         }
                     }, TestOrNot.isTest);
+                }else{
+                    toastOnly.toastShowShort("请填写好友邀请码");
                 }
             }
         });

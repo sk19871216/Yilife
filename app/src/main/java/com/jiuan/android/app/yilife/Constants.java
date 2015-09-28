@@ -4,20 +4,20 @@ public class Constants {
     //微信
 	// APP_ID �滻Ϊ���Ӧ�ôӹٷ���վ���뵽�ĺϷ�appId
 //    public static final String APP_ID = "wxeee2a7791ce72ed6";//测试
-//    public static final String APP_ID = "wxa9d2e19d1800f3d8";//体验站
-    public static final String APP_ID = "wx3c55557e76a79737";//VIP
+    public static final String APP_ID = "wxa9d2e19d1800f3d8";//体验站
+//    public static final String APP_ID = "wx3c55557e76a79737";//VIP
 //    public static final String APP_ID = "wxd4a6e13843f1903f";//正式
 
 //    public static final String APP_ID = "wxd930ea5d5a258f4f";
 
-//    public static final String SERECT = "091efc3585ad6700e2b0c7226690c9e8";//体验站
-    public static final String SERECT = "60dc6dac61813d0c6c6ee2ed5f0a2f1d";//VIP
+    public static final String SERECT = "091efc3585ad6700e2b0c7226690c9e8";//体验站
+//    public static final String SERECT = "60dc6dac61813d0c6c6ee2ed5f0a2f1d";//VIP
 //    public static final String SERECT = "0e4ad3a3333c5909353a88ad1ee7a09b";//正式
 //    public static final String SERECT = "";
 //sina
     /** 当前 DEMO 应用的 APP_KEY，第三方应用应该使用自己的 APP_KEY 替换该 APP_KEY */
-//    public static final String APP_KEY      = "1415677324";//测试
-    public static final String APP_KEY      = "1042894933";  //VIP
+    public static final String APP_KEY      = "1415677324";//测试
+//    public static final String APP_KEY      = "1042894933";  //VIP
 //    public static final String APP_KEY      = "3265655809"; //正式
 
     /**
